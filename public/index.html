@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Image Widget Demo</title>
+    <style>
+      body{
+        margin:0;
+        min-height:100vh;
+        background: #0b0e13;
+        color: #f5f7fb;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding: 28px;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+                     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",
+                     sans-serif;
+      }
+      .wrap{
+        width:min(1100px, 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <ai-image-widget
+        api-endpoint="/api/generate-image"
+        title="Studio Image Generator"
+        subtitle="Fast prompt-to-image with export options"
+      ></ai-image-widget>
+    </div>
+
+    <script type="module" src="/ai-image-widget.js"></script>
+  </body>
+</html>
